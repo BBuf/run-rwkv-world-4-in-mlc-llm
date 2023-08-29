@@ -23,8 +23,40 @@ tokenizer_format = {
     "version": "1.0",
     "truncation": None,
     "padding": None,
-    "added_tokens": []
+    "added_tokens": [],
+    "normalizer": {"type": "NFC"},
+    "pre_tokenizer": {
+        "type": "ByteLevel",
+        "add_prefix_space": False,
+        "trim_offsets": True,
+        "use_regex": True
+    },
+    "post_processor": {
+        "type": "ByteLevel",
+        "add_prefix_space": False,
+        "trim_offsets": True,
+        "use_regex": True
+    },
+    "decoder": {
+        "type": "ByteLevel",
+        "add_prefix_space": False,
+        "trim_offsets": True,
+        "use_regex": True
+    },
+    "model": {
+        "type": "BPE",
+        "dropout": None,
+        "unk_token": None,
+        "continuing_subword_prefix": None,
+        "end_of_word_suffix": None,
+        "fuse_unk": False,
+        "byte_fallback": False,
+        "vocab": None,
+        "merges": []
+    }
 }
+
+vocab = []
 
 for item in data:
     token_entry = {
@@ -39,6 +71,10 @@ for item in data:
     if item[1] == "0":
         token_entry['special'] = True
     tokenizer_format["added_tokens"].append(token_entry)
+    vocab.append(item[1])
+
+result_vocab = {word: index for index, word in enumerate(vocab)}
+tokenizer_format['model']['vocab'] = result_vocab
 
 # 将结果写入json文件
 with open('tokenizer.json', 'w', encoding='utf-8') as json_file:
