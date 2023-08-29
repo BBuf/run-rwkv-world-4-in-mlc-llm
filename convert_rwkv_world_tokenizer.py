@@ -36,7 +36,7 @@ for item in data:
         "normalized": False,
         "special": False
     }
-    if item[1] == " EOS":
+    if item[1] == "0":
         token_entry['special'] = True
     tokenizer_format["added_tokens"].append(token_entry)
 
