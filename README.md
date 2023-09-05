@@ -1,6 +1,6 @@
-### Run Rwkv-World-4 in MLC-LLM Tutorial
+### Run RWKV-World-4 in MLC-LLM Tutorial
 
-This tutorial explains how to deploy the rwkv-world-4 model within the mlc-llm framework, covering CUDA, Mac M2, and Android platforms.
+This tutorial explains how to deploy the RWKV-World-4 model within the mlc-llm framework, covering CUDA, Mac M2, and Android platforms.
 
 The 1.5B RWKV-World-4 model exhibits a 'nan' phenomenon when deployed using FP16. We recommend deploying with the 3B or 7B model instead.
 
