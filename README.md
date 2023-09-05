@@ -202,3 +202,5 @@ Have a good luck!
 - [StarRing2022/RWKV-4-World-1.5B](https://huggingface.co/StarRing2022/RWKV-4-World-1.5B)
 - [StarRing2022/RWKV-4-World-3B](https://huggingface.co/StarRing2022/RWKV-4-World-3B)
 - [StarRing2022/RWKV-4-World-7B](https://huggingface.co/StarRing2022/RWKV-4-World-7B)
+- [https://github.com/mlc-ai/mlc-llm/issues/862](https://github.com/mlc-ai/mlc-llm/issues/862)
+- [https://github.com/mlc-ai/mlc-llm/issues/859](https://github.com/mlc-ai/mlc-llm/issues/859)
