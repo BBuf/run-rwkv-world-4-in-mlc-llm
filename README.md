@@ -190,9 +190,7 @@ Using Xiaomi phones as an example, you can follow the tutorial below to enable d
 - **Step Three: Online Debugging**
   - Connect your phone to the computer via USB. It will typically auto-install the necessary drivers. When you run the program, a device selection dialog will appear. Choose your phone, and the APK will automatically install and run.
 
-Unfortunately, there's an issue with token generation getting stuck on Xiaomi phones. You might want to try using a different type of phone.
-
-Have a good luck!
+An compiled apk: https://github.com/BBuf/run-rwkv-world-4-in-mlc-llm/releases/download/v1.0.0/app-debug.apk
 
 ### Related Links
 
